@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmDateTimeLcd</class>
+ <widget class="QWidget" name="frmDateTimeLcd">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="DateTimeLcd" name="lcdNumber1"/>
+   </item>
+   <item>
+    <widget class="DateTimeLcd" name="lcdNumber2"/>
+   </item>
+   <item>
+    <widget class="DateTimeLcd" name="lcdNumber3"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DateTimeLcd</class>
+   <extends>QLCDNumber</extends>
+   <header>datetimelcd.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

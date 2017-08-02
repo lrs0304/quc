@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmMain</class>
+ <widget class="QWidget" name="frmMain">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="11" column="4">
+    <widget class="QPushButton" name="btnFlatUI">
+     <property name="text">
+      <string>FlatUI</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="2">
+    <widget class="QPushButton" name="btnPanelWidget">
+     <property name="text">
+      <string>面板容器</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="5">
+    <widget class="QPushButton" name="btnProgressBarPolo">
+     <property name="text">
+      <string>水球进度条</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="4">
+    <widget class="QPushButton" name="btnProgressBarPercent">
+     <property name="text">
+      <string>百分比进度条</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="2">
+    <widget class="QPushButton" name="btnProgressBarWait">
+     <property name="text">
+      <string>等待进度条</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QPushButton" name="btnProgressBarRound">
+     <property name="text">
+      <string>圆形进度条</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="5">
+    <widget class="QPushButton" name="btnAdsWidget">
+     <property name="text">
+      <string>广告轮播</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QPushButton" name="btnProgressBarColor">
+     <property name="text">
+      <string>多彩进度条</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="2">
+    <widget class="QPushButton" name="btnLineRuler">
+     <property name="text">
+      <string>线性标尺</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="4">
+    <widget class="QPushButton" name="btnTumbler">
+     <property name="text">
+      <string>滑动选择器</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QPushButton" name="btnBottomWidget">
+     <property name="text">
+      <string>通用底部栏</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="QPushButton" name="btnRoundCircle">
+     <property name="text">
+      <string>旋转的圆</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="2">
+    <widget class="QPushButton" name="btnRoundWidget">
+     <property name="text">
+      <string>多彩旋转圆</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="4">
+    <widget class="QPushButton" name="btnSliderBar">
+     <property name="text">
+      <string>滑动导航条</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="5">
+    <widget class="QPushButton" name="btnSliderBarForm">
+     <property name="text">
+      <string>滑动导航窗体</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="QPushButton" name="btnSliderRange">
+     <property name="text">
+      <string>范围滑动条</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <widget class="QPushButton" name="btnSliderRuler">
+     <property name="text">
+      <string>滑动标尺</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="4">
+    <widget class="QPushButton" name="btnImageClock">
+     <property name="text">
+      <string>图片背景时钟</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="5">
+    <widget class="QPushButton" name="btnImagePilot">
+     <property name="text">
+      <string>图片指示灯</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QPushButton" name="btnImagePower">
+     <property name="text">
+      <string>图片背景电源</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="btnImageView">
+     <property name="text">
+      <string>图片浏览器</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QPushButton" name="btnCurveChart">
+     <property name="text">
+      <string>简单曲线图</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="5">
+    <widget class="QPushButton" name="btnBarRuler">
+     <property name="text">
+      <string>柱状标尺</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QPushButton" name="btnBarScale">
+     <property name="text">
+      <string>柱状双向刻度尺</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QPushButton" name="btnBarTemp">
+     <property name="text">
+      <string>柱状温度计</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QPushButton" name="btnBarVolumn">
+     <property name="text">
+      <string>柱状音量</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="4">
+    <widget class="QPushButton" name="btnBattery">
+     <property name="text">
+      <string>电池电量</string>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="5">
+    <widget class="QPushButton" name="btnSwitchButton">
+     <property name="text">
+      <string>开关按钮</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0">
+    <widget class="QPushButton" name="btnTextMoveWidget">
+     <property name="text">
+      <string>跑马灯</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1">
+    <widget class="QPushButton" name="btnVerifiedCode">
+     <property name="text">
+      <string>验证码</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="2">
+    <widget class="QPushButton" name="btnWaveBar">
+     <property name="text">
+      <string>直方动态图</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="4">
+    <widget class="QPushButton" name="btnWaveDouble">
+     <property name="text">
+      <string>直方对称图</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="5">
+    <widget class="QPushButton" name="btnWaveLine">
+     <property name="text">
+      <string>直方波形图</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="btnGaugeCompass">
+     <property name="text">
+      <string>指南针仪表盘</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="5">
+    <widget class="QPushButton" name="btnLunarCalendarInfo">
+     <property name="text">
+      <string>农历处理</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QPushButton" name="btnGaugeArc">
+     <property name="text">
+      <string>圆弧仪表盘</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QPushButton" name="btnDeviceSizeTable">
+     <property name="text">
+      <string>存储容量</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="5">
+    <widget class="QPushButton" name="btnCpuMemoryLabel">
+     <property name="text">
+      <string>Cpu内存</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QPushButton" name="btnImageCalendar">
+     <property name="text">
+      <string>图片背景日历</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="0">
+    <widget class="QPushButton" name="btnScreenWidget">
+     <property name="text">
+      <string>全局截图</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="2">
+    <widget class="QPushButton" name="btnMaskWidget">
+     <property name="text">
+      <string>窗体遮罩层</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="1">
+    <widget class="QPushButton" name="btnColorWidget">
+     <property name="text">
+      <string>颜色拾取器</string>
+     </property>
+    </widget>
+   </item>
+   <item row="14" column="4">
+    <widget class="QPushButton" name="btnTrayIcon">
+     <property name="text">
+      <string>显示托盘图标</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="4">
+    <widget class="QPushButton" name="btnNavListViewForm">
+     <property name="text">
+      <string>树状导航窗体</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="4">
+    <widget class="QPushButton" name="btnAnimationButton">
+     <property name="text">
+      <string>动画图片按钮</string>
+     </property>
+    </widget>
+   </item>
+   <item row="13" column="5">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="5" column="0">
+    <widget class="QPushButton" name="btnDateTimeLcd">
+     <property name="text">
+      <string>时间LCD</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="5">
+    <widget class="QPushButton" name="btnNavProgressBar">
+     <property name="text">
+      <string>导航进度条</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2">
+    <widget class="QPushButton" name="btnNavListView">
+     <property name="text">
+      <string>树状导航栏</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="5">
+    <widget class="QPushButton" name="btnGaugeClock">
+     <property name="text">
+      <string>时钟仪表盘</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="btnGaugeDial">
+     <property name="text">
+      <string>旋转仪表盘</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="5">
+    <widget class="QPushButton" name="btnLedNumber">
+     <property name="text">
+      <string>LED数字</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="4">
+    <widget class="QPushButton" name="btnLedText">
+     <property name="text">
+      <string>LED字模</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="QPushButton" name="btnLcdNumber">
+     <property name="text">
+      <string>LCD数码管</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QPushButton" name="btnLightButton">
+     <property name="text">
+      <string>高亮按钮</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QPushButton" name="btnNavLabel">
+     <property name="text">
+      <string>导航标签</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="4">
+    <widget class="QPushButton" name="btnGaugeSimple">
+     <property name="text">
+      <string>简单仪表盘</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QPushButton" name="btnGaugeCar">
+     <property name="text">
+      <string>汽车仪表盘</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="btnGaugeNet">
+     <property name="text">
+      <string>网络仪表盘</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <widget class="QPushButton" name="btnGaugeProgressBar">
+     <property name="text">
+      <string>进度仪表盘</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5">
+    <widget class="QPushButton" name="btnGaugeRange">
+     <property name="text">
+      <string>范围仪表盘</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="btnGaugeSpeed">
+     <property name="text">
+      <string>速度仪表盘</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="btnGaugeWatch">
+     <property name="text">
+      <string>钟形仪表盘</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="btnGaugeRound">
+     <property name="text">
+      <string>圆环仪表盘</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="1">
+    <widget class="QPushButton" name="btnPanelMoveWidget">
+     <property name="text">
+      <string>移动容器</string>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="0">
+    <widget class="QPushButton" name="btnWavePlot">
+     <property name="text">
+      <string>正弦曲线</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="0">
+    <widget class="QPushButton" name="btnIconEditor">
+     <property name="text">
+      <string>图标编辑</string>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="1">
+    <widget class="QPushButton" name="btnComboBox">
+     <property name="text">
+      <string>下拉框</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

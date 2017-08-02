@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmWaveDouble</class>
+ <widget class="QWidget" name="frmWaveDouble">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="WaveDouble" name="widget1"/>
+   </item>
+   <item>
+    <widget class="WaveDouble" name="widget2"/>
+   </item>
+   <item>
+    <widget class="WaveDouble" name="widget3"/>
+   </item>
+   <item>
+    <widget class="WaveDouble" name="widget4"/>
+   </item>
+   <item>
+    <widget class="WaveDouble" name="widget5"/>
+   </item>
+   <item>
+    <widget class="WaveDouble" name="widget6"/>
+   </item>
+   <item>
+    <widget class="WaveDouble" name="widget7"/>
+   </item>
+   <item>
+    <widget class="WaveDouble" name="widget8"/>
+   </item>
+   <item>
+    <widget class="WaveDouble" name="widget9"/>
+   </item>
+   <item>
+    <widget class="WaveDouble" name="widget10"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WaveDouble</class>
+   <extends>QWidget</extends>
+   <header>wavedouble.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

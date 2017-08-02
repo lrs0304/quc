@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/power_0.png</file>
+        <file>image/power_1.png</file>
+        <file>image/power_2.png</file>
+        <file>image/power_3.png</file>
+        <file>image/power_4.png</file>
+        <file>image/power_5.png</file>
+    </qresource>
+</RCC>

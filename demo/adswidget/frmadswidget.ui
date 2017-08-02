@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmAdsWidget</class>
+ <widget class="QWidget" name="frmAdsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="AdsWidget" name="adsWidget1">
+     <property name="interval">
+      <number>1000</number>
+     </property>
+     <property name="bannerFixedSize">
+      <size>
+       <width>20</width>
+       <height>10</height>
+      </size>
+     </property>
+     <property name="bannerStyle">
+      <enum>AdsWidget::BannerStyle_Min</enum>
+     </property>
+     <property name="imageNames">
+      <string>:/image/ad1.png;:/image/ad2.png;:/image/ad3.png</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="AdsWidget" name="adsWidget2">
+     <property name="imageNames">
+      <string>:/image/ad1.png;:/image/ad2.png;:/image/ad3.png</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AdsWidget</class>
+   <extends>QWidget</extends>
+   <header>adswidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

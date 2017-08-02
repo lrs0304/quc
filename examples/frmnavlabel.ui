@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmNavLabel</class>
+ <widget class="QWidget" name="frmNavLabel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="1">
+    <widget class="NavLabel" name="lab21">
+     <property name="minimumSize">
+      <size>
+       <width>111</width>
+       <height>31</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>111</width>
+       <height>31</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>温度告警值</string>
+     </property>
+     <property name="arrowStyle">
+      <enum>NavLabel::ArrowStyle_Left</enum>
+     </property>
+     <property name="background">
+      <color>
+       <red>225</red>
+       <green>102</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="NavLabel" name="lab11">
+     <property name="minimumSize">
+      <size>
+       <width>111</width>
+       <height>31</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>111</width>
+       <height>31</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>当前温度</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="NavLabel" name="lab13">
+     <property name="minimumSize">
+      <size>
+       <width>111</width>
+       <height>31</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>111</width>
+       <height>31</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>当前压力</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>24</red>
+       <green>189</green>
+       <blue>155</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="NavLabel" name="lab22">
+     <property name="minimumSize">
+      <size>
+       <width>111</width>
+       <height>31</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>111</width>
+       <height>31</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>湿度告警值</string>
+     </property>
+     <property name="arrowStyle">
+      <enum>NavLabel::ArrowStyle_Left</enum>
+     </property>
+     <property name="background">
+      <color>
+       <red>90</red>
+       <green>90</green>
+       <blue>90</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="NavLabel" name="lab12">
+     <property name="minimumSize">
+      <size>
+       <width>111</width>
+       <height>31</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>111</width>
+       <height>31</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>当前湿度</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>255</red>
+       <green>107</green>
+       <blue>107</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="NavLabel" name="lab23">
+     <property name="minimumSize">
+      <size>
+       <width>111</width>
+       <height>31</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>111</width>
+       <height>31</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>压力告警值</string>
+     </property>
+     <property name="arrowStyle">
+      <enum>NavLabel::ArrowStyle_Left</enum>
+     </property>
+     <property name="background">
+      <color>
+       <red>46</red>
+       <green>138</green>
+       <blue>87</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="NavLabel" name="lab31">
+       <property name="minimumSize">
+        <size>
+         <width>33</width>
+         <height>111</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>33</width>
+         <height>111</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>当
+前
+温
+度</string>
+       </property>
+       <property name="arrowStyle">
+        <enum>NavLabel::ArrowStyle_Bottom</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="NavLabel" name="lab32">
+       <property name="minimumSize">
+        <size>
+         <width>33</width>
+         <height>111</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>33</width>
+         <height>111</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>当
+前
+湿
+度</string>
+       </property>
+       <property name="arrowStyle">
+        <enum>NavLabel::ArrowStyle_Bottom</enum>
+       </property>
+       <property name="background">
+        <color>
+         <red>255</red>
+         <green>107</green>
+         <blue>107</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="NavLabel" name="lab33">
+       <property name="minimumSize">
+        <size>
+         <width>33</width>
+         <height>111</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>33</width>
+         <height>111</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>当
+前
+压
+力</string>
+       </property>
+       <property name="arrowStyle">
+        <enum>NavLabel::ArrowStyle_Bottom</enum>
+       </property>
+       <property name="background">
+        <color>
+         <red>24</red>
+         <green>189</green>
+         <blue>155</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="NavLabel" name="lab41">
+       <property name="minimumSize">
+        <size>
+         <width>33</width>
+         <height>111</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>33</width>
+         <height>111</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>当
+前
+温
+度</string>
+       </property>
+       <property name="arrowStyle">
+        <enum>NavLabel::ArrowStyle_Top</enum>
+       </property>
+       <property name="background">
+        <color>
+         <red>225</red>
+         <green>102</green>
+         <blue>255</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="NavLabel" name="lab42">
+       <property name="minimumSize">
+        <size>
+         <width>33</width>
+         <height>111</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>33</width>
+         <height>111</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>当
+前
+湿
+度</string>
+       </property>
+       <property name="arrowStyle">
+        <enum>NavLabel::ArrowStyle_Top</enum>
+       </property>
+       <property name="background">
+        <color>
+         <red>90</red>
+         <green>90</green>
+         <blue>90</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="NavLabel" name="lab43">
+       <property name="minimumSize">
+        <size>
+         <width>33</width>
+         <height>111</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>33</width>
+         <height>111</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>当
+前
+压
+力</string>
+       </property>
+       <property name="arrowStyle">
+        <enum>NavLabel::ArrowStyle_Top</enum>
+       </property>
+       <property name="background">
+        <color>
+         <red>46</red>
+         <green>138</green>
+         <blue>87</blue>
+        </color>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>NavLabel</class>
+   <extends>QLabel</extends>
+   <header>navlabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

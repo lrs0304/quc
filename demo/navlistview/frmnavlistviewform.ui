@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmNavListViewForm</class>
+ <widget class="QWidget" name="frmNavListViewForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="NavListView" name="listView">
+     <property name="minimumSize">
+      <size>
+       <width>170</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>170</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="infoVisible">
+      <bool>true</bool>
+     </property>
+     <property name="lineVisible">
+      <bool>true</bool>
+     </property>
+     <property name="icoColorBg">
+      <bool>true</bool>
+     </property>
+     <property name="icoStyle">
+      <enum>NavListView::IcoStyle_Cross</enum>
+     </property>
+     <property name="colorLine">
+      <color>
+       <red>32</red>
+       <green>53</green>
+       <blue>74</blue>
+      </color>
+     </property>
+     <property name="colorBgNormal">
+      <color>
+       <red>52</red>
+       <green>73</green>
+       <blue>94</blue>
+      </color>
+     </property>
+     <property name="colorBgSelected">
+      <color>
+       <red>24</red>
+       <green>189</green>
+       <blue>155</blue>
+      </color>
+     </property>
+     <property name="colorBgHover">
+      <color alpha="150">
+       <red>24</red>
+       <green>189</green>
+       <blue>155</blue>
+      </color>
+     </property>
+     <property name="colorTextNormal">
+      <color>
+       <red>254</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="colorTextSelected">
+      <color>
+       <red>252</red>
+       <green>252</green>
+       <blue>252</blue>
+      </color>
+     </property>
+     <property name="colorTextHover">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="QWidget" name="page1">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="lab1">
+         <property name="text">
+          <string>主界面</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page2">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="lab1_2">
+         <property name="text">
+          <string>防区信息</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page3">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="lab3">
+         <property name="text">
+          <string>地图编辑</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page4">
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QLabel" name="lab4">
+         <property name="text">
+          <string>位置调整</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>NavListView</class>
+   <extends>QListView</extends>
+   <header>navlistview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/pilot_blue.png</file>
+        <file>image/pilot_gray.png</file>
+        <file>image/pilot_green.png</file>
+        <file>image/pilot_red.png</file>
+        <file>image/pilot_yellow.png</file>
+    </qresource>
+</RCC>

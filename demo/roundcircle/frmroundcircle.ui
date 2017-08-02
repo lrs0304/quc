@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmRoundCircle</class>
+ <widget class="QWidget" name="frmRoundCircle">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="RoundCircle" name="widget1"/>
+   </item>
+   <item row="0" column="1">
+    <widget class="RoundCircle" name="widget2">
+     <property name="bgColorStart">
+      <color>
+       <red>31</red>
+       <green>31</green>
+       <blue>31</blue>
+      </color>
+     </property>
+     <property name="bgColorEnd">
+      <color>
+       <red>91</red>
+       <green>91</green>
+       <blue>91</blue>
+      </color>
+     </property>
+     <property name="pieColor1Start">
+      <color>
+       <red>34</red>
+       <green>139</green>
+       <blue>34</blue>
+      </color>
+     </property>
+     <property name="pieColor1End">
+      <color>
+       <red>46</red>
+       <green>138</green>
+       <blue>87</blue>
+      </color>
+     </property>
+     <property name="pieColor2Start">
+      <color>
+       <red>240</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="pieColor2End">
+      <color>
+       <red>248</red>
+       <green>249</green>
+       <blue>254</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="RoundCircle" name="widget3">
+     <property name="clockWise">
+      <bool>false</bool>
+     </property>
+     <property name="pieColor1Start">
+      <color>
+       <red>254</red>
+       <green>48</green>
+       <blue>48</blue>
+      </color>
+     </property>
+     <property name="pieColor1End">
+      <color>
+       <red>255</red>
+       <green>69</green>
+       <blue>0</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="RoundCircle" name="widget4">
+     <property name="clockWise">
+      <bool>false</bool>
+     </property>
+     <property name="pieColor1Start">
+      <color>
+       <red>67</red>
+       <green>110</green>
+       <blue>238</blue>
+      </color>
+     </property>
+     <property name="pieColor1End">
+      <color>
+       <red>72</red>
+       <green>118</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RoundCircle</class>
+   <extends>QWidget</extends>
+   <header>roundcircle.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/clean.png</file>
+        <file>image/clean_enter.png</file>
+        <file>image/clean_leave.png</file>
+        <file>image/safe.png</file>
+        <file>image/safe_enter.png</file>
+        <file>image/safe_leave.png</file>
+        <file>image/v-home-ico-contact.png</file>
+        <file>image/v-home-ico-home.png</file>
+        <file>image/v-home-ico-img.png</file>
+        <file>image/youhua.png</file>
+        <file>image/youhua_enter.png</file>
+        <file>image/youhua_leave.png</file>
+    </qresource>
+</RCC>

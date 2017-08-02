@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmGaugeProgressBar</class>
+ <widget class="QWidget" name="frmGaugeProgressBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="GaugeProgressBar" name="gaugeProgressBar1" native="true"/>
+   </item>
+   <item row="0" column="1">
+    <widget class="GaugeProgressBar" name="gaugeProgressBar2" native="true">
+     <property name="progressColor" stdset="0">
+      <color>
+       <red>0</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="GaugeProgressBar" name="gaugeProgressBar3" native="true">
+     <property name="progressColor" stdset="0">
+      <color>
+       <red>24</red>
+       <green>189</green>
+       <blue>155</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="GaugeProgressBar" name="gaugeProgressBar4" native="true">
+     <property name="showPointer" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="showValue" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="GaugeProgressBar" name="gaugeProgressBar5" native="true">
+     <property name="progressColor" stdset="0">
+      <color>
+       <red>0</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="showPointer" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="showValue" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="GaugeProgressBar" name="gaugeProgressBar6" native="true">
+     <property name="progressColor" stdset="0">
+      <color>
+       <red>24</red>
+       <green>189</green>
+       <blue>155</blue>
+      </color>
+     </property>
+     <property name="showPointer" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="showValue" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="QSlider" name="horizontalSlider">
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GaugeProgressBar</class>
+   <extends>QWidget</extends>
+   <header>gaugeprogressbar.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>gaugeProgressBar4</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>95</x>
+     <y>306</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>91</x>
+     <y>272</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>gaugeProgressBar5</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>308</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>247</x>
+     <y>268</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>gaugeProgressBar6</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>403</x>
+     <y>309</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>401</x>
+     <y>280</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>gaugeProgressBar1</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>34</x>
+     <y>307</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>46</x>
+     <y>126</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>gaugeProgressBar2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>197</x>
+     <y>309</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>202</x>
+     <y>101</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>gaugeProgressBar3</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>356</x>
+     <y>306</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>351</x>
+     <y>145</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmProgressBarWait</class>
+ <widget class="QWidget" name="frmProgressBarWait">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="ProgressBarWait" name="progressBarWait1">
+     <property name="barStyle">
+      <enum>ProgressBarWait::BarStyle_Arc</enum>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>170</green>
+       <blue>127</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="ProgressBarWait" name="progressBarWait2">
+     <property name="barStyle">
+      <enum>ProgressBarWait::BarStyle_RoundCircle</enum>
+     </property>
+     <property name="foreground">
+      <color alpha="229">
+       <red>100</red>
+       <green>184</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="ProgressBarWait" name="progressBarWait3">
+     <property name="barStyle">
+      <enum>ProgressBarWait::BarStyle_Pie</enum>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>255</red>
+       <green>107</green>
+       <blue>107</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="ProgressBarWait" name="progressBarWait4">
+     <property name="foreground">
+      <color alpha="77">
+       <red>100</red>
+       <green>184</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="ProgressBarWait" name="progressBarWait5">
+     <property name="clockWise">
+      <bool>true</bool>
+     </property>
+     <property name="showPercent">
+      <bool>true</bool>
+     </property>
+     <property name="barStyle">
+      <enum>ProgressBarWait::BarStyle_Ring</enum>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>170</green>
+       <blue>127</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="ProgressBarWait" name="progressBarWait6">
+     <property name="barStyle">
+      <enum>ProgressBarWait::BarStyle_SingleCircle</enum>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>100</red>
+       <green>184</green>
+       <blue>255</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="ProgressBarWait" name="progressBarWait7">
+     <property name="barStyle">
+      <enum>ProgressBarWait::BarStyle_DoubleCircle</enum>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>0</red>
+       <green>170</green>
+       <blue>127</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="ProgressBarWait" name="progressBarWait8">
+     <property name="clockWise">
+      <bool>true</bool>
+     </property>
+     <property name="foreground">
+      <color alpha="77">
+       <red>255</red>
+       <green>107</green>
+       <blue>107</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ProgressBarWait</class>
+   <extends>QWidget</extends>
+   <header>progressbarwait.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

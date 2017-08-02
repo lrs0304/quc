@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmNavListView</class>
+ <widget class="QWidget" name="frmNavListView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="NavListView" name="listView1">
+     <property name="infoVisible">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="NavListView" name="listView4">
+     <property name="infoVisible">
+      <bool>false</bool>
+     </property>
+     <property name="lineVisible">
+      <bool>false</bool>
+     </property>
+     <property name="icoColorBg">
+      <bool>true</bool>
+     </property>
+     <property name="icoStyle">
+      <enum>NavListView::IcoStyle_Triangle</enum>
+     </property>
+     <property name="colorLine">
+      <color>
+       <red>32</red>
+       <green>53</green>
+       <blue>74</blue>
+      </color>
+     </property>
+     <property name="colorBgNormal">
+      <color>
+       <red>52</red>
+       <green>73</green>
+       <blue>94</blue>
+      </color>
+     </property>
+     <property name="colorBgSelected">
+      <color>
+       <red>24</red>
+       <green>189</green>
+       <blue>155</blue>
+      </color>
+     </property>
+     <property name="colorBgHover">
+      <color alpha="150">
+       <red>24</red>
+       <green>189</green>
+       <blue>155</blue>
+      </color>
+     </property>
+     <property name="colorTextNormal">
+      <color>
+       <red>254</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="colorTextSelected">
+      <color>
+       <red>252</red>
+       <green>252</green>
+       <blue>252</blue>
+      </color>
+     </property>
+     <property name="colorTextHover">
+      <color>
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="NavListView" name="listView2">
+     <property name="infoVisible">
+      <bool>false</bool>
+     </property>
+     <property name="colorLine">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="colorBgNormal">
+      <color>
+       <red>238</red>
+       <green>238</green>
+       <blue>238</blue>
+      </color>
+     </property>
+     <property name="colorBgSelected">
+      <color>
+       <red>255</red>
+       <green>69</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="colorBgHover">
+      <color>
+       <red>255</red>
+       <green>160</green>
+       <blue>122</blue>
+      </color>
+     </property>
+     <property name="colorTextNormal">
+      <color>
+       <red>10</red>
+       <green>10</green>
+       <blue>10</blue>
+      </color>
+     </property>
+     <property name="colorTextSelected">
+      <color>
+       <red>254</red>
+       <green>255</green>
+       <blue>239</blue>
+      </color>
+     </property>
+     <property name="colorTextHover">
+      <color>
+       <red>10</red>
+       <green>10</green>
+       <blue>10</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="NavListView" name="listView3">
+     <property name="infoVisible">
+      <bool>false</bool>
+     </property>
+     <property name="colorLine">
+      <color>
+       <red>193</red>
+       <green>193</green>
+       <blue>193</blue>
+      </color>
+     </property>
+     <property name="colorBgNormal">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="colorBgSelected">
+      <color>
+       <red>232</red>
+       <green>236</green>
+       <blue>245</blue>
+      </color>
+     </property>
+     <property name="colorBgHover">
+      <color>
+       <red>242</red>
+       <green>242</green>
+       <blue>242</blue>
+      </color>
+     </property>
+     <property name="colorTextNormal">
+      <color>
+       <red>19</red>
+       <green>36</green>
+       <blue>62</blue>
+      </color>
+     </property>
+     <property name="colorTextSelected">
+      <color>
+       <red>19</red>
+       <green>36</green>
+       <blue>62</blue>
+      </color>
+     </property>
+     <property name="colorTextHover">
+      <color>
+       <red>19</red>
+       <green>36</green>
+       <blue>62</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>NavListView</class>
+   <extends>QListView</extends>
+   <header>navlistview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

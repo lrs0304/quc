@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>724</width>
+    <height>556</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="GaugeCar" name="gaugeCar"/>
+   </item>
+   <item row="0" column="1">
+    <widget class="GaugeCompass" name="gaugeCompass"/>
+   </item>
+   <item row="0" column="2">
+    <widget class="GaugeDial" name="gaugeDial">
+     <property name="value">
+      <double>60.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="GaugeProgressBar" name="gaugeProgressBar">
+     <property name="value">
+      <double>80.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="GaugeRound" name="gaugeRound">
+     <property name="value">
+      <double>50.000000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="GaugeSpeed" name="gaugeSpeed">
+     <property name="minValue">
+      <double>0.000000000000000</double>
+     </property>
+     <property name="value">
+      <double>80.000000000000000</double>
+     </property>
+     <property name="animation">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GaugeCar</class>
+   <extends>QWidget</extends>
+   <header>gaugecar.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GaugeCompass</class>
+   <extends>QWidget</extends>
+   <header>gaugecompass.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GaugeDial</class>
+   <extends>QWidget</extends>
+   <header>gaugedial.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GaugeProgressBar</class>
+   <extends>QWidget</extends>
+   <header>gaugeprogressbar.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GaugeRound</class>
+   <extends>QWidget</extends>
+   <header>gaugeround.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GaugeSpeed</class>
+   <extends>QWidget</extends>
+   <header>gaugespeed.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

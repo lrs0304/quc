@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmSliderRange</class>
+ <widget class="QWidget" name="frmSliderRange">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="SliderRange" name="sliderRange1"/>
+   </item>
+   <item>
+    <widget class="SliderRange" name="sliderRange2">
+     <property name="usedColor">
+      <color>
+       <red>255</red>
+       <green>107</green>
+       <blue>107</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="SliderRange" name="sliderRange3">
+     <property name="sliderStyle">
+      <enum>SliderRange::SliderStyle_Circle</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="SliderRange" name="sliderRange4">
+     <property name="usedColor">
+      <color>
+       <red>255</red>
+       <green>107</green>
+       <blue>107</blue>
+      </color>
+     </property>
+     <property name="sliderStyle">
+      <enum>SliderRange::SliderStyle_Circle</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SliderRange</class>
+   <extends>QWidget</extends>
+   <header>sliderrange.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

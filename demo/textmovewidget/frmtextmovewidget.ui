@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmTextMoveWidget</class>
+ <widget class="QWidget" name="frmTextMoveWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <pointsize>14</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="TextMoveWidget" name="widget1">
+     <property name="text">
+      <string>今天天气真不错啊!中奖啦!</string>
+     </property>
+     <property name="mouseHoverStop">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="TextMoveWidget" name="widget2">
+     <property name="text">
+      <string>今天天气真不错啊!中奖啦!</string>
+     </property>
+     <property name="interval">
+      <number>15</number>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>255</red>
+       <green>107</green>
+       <blue>107</blue>
+      </color>
+     </property>
+     <property name="moveStyle">
+      <enum>TextMoveWidget::MoveStyle_LeftToRight</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="TextMoveWidget" name="widget3">
+     <property name="text">
+      <string>中华人民共和国万岁!</string>
+     </property>
+     <property name="interval">
+      <number>15</number>
+     </property>
+     <property name="mouseHoverStop">
+      <bool>true</bool>
+     </property>
+     <property name="foreground">
+      <color>
+       <red>24</red>
+       <green>189</green>
+       <blue>155</blue>
+      </color>
+     </property>
+     <property name="moveStyle">
+      <enum>TextMoveWidget::MoveStyle_RightToLeft</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TextMoveWidget</class>
+   <extends>QWidget</extends>
+   <header>textmovewidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

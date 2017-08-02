@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmGaugeRange</class>
+ <widget class="QWidget" name="frmGaugeRange">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" colspan="2">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#widget{
+border-image: url(:/image/bg1.jpg);
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="GaugeRange" name="gaugeRange1">
+        <property name="usedColor">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="freeColor">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="textColor">
+         <color>
+          <red>0</red>
+          <green>170</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="rangeTextColor">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="GaugeRange" name="gaugeRange2">
+        <property name="usedColor">
+         <color>
+          <red>255</red>
+          <green>107</green>
+          <blue>107</blue>
+         </color>
+        </property>
+        <property name="freeColor">
+         <color>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="textColor">
+         <color>
+          <red>0</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </property>
+        <property name="rangeTextColor">
+         <color>
+          <red>0</red>
+          <green>170</green>
+          <blue>127</blue>
+         </color>
+        </property>
+        <property name="rangeStyle">
+         <enum>GaugeRange::RangeStyle_Circle</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QSlider" name="horizontalSlider1">
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="value">
+      <number>40</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QSlider" name="horizontalSlider2">
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="value">
+      <number>60</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GaugeRange</class>
+   <extends>QWidget</extends>
+   <header>gaugerange.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>horizontalSlider1</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>gaugeRange1</receiver>
+   <slot>setLeftValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>60</x>
+     <y>306</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>56</x>
+     <y>286</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider1</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>gaugeRange2</receiver>
+   <slot>setLeftValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>113</x>
+     <y>310</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>272</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>gaugeRange1</receiver>
+   <slot>setRightValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>356</x>
+     <y>313</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>203</x>
+     <y>281</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>gaugeRange2</receiver>
+   <slot>setRightValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>387</x>
+     <y>311</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>369</x>
+     <y>283</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gaugeRange1</sender>
+   <signal>valueChanged(int,int)</signal>
+   <receiver>gaugeRange1</receiver>
+   <slot>setCurrentValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>117</x>
+     <y>146</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>31</x>
+     <y>165</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gaugeRange2</sender>
+   <signal>valueChanged(int,int)</signal>
+   <receiver>gaugeRange2</receiver>
+   <slot>setCurrentValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>433</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>474</x>
+     <y>154</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

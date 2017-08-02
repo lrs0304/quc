@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmAnimationButton</class>
+ <widget class="QWidget" name="frmAnimationButton">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="AnimationButton1" name="animationButton1">
+     <property name="imageName">
+      <string>:/image/v-home-ico-contact.png</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="AnimationButton1" name="animationButton2">
+     <property name="imageName">
+      <string>:/image/v-home-ico-home.png</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="AnimationButton1" name="animationButton3">
+     <property name="imageName">
+      <string>:/image/v-home-ico-img.png</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="AnimationButton2" name="animationButton4">
+     <property name="normalImage">
+      <string>:/image/clean.png</string>
+     </property>
+     <property name="enterImage">
+      <string>:/image/clean_enter.png</string>
+     </property>
+     <property name="leaveImage">
+      <string>:/image/clean_leave.png</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="AnimationButton2" name="animationButton5">
+     <property name="normalImage">
+      <string>:/image/safe.png</string>
+     </property>
+     <property name="enterImage">
+      <string>:/image/safe_enter.png</string>
+     </property>
+     <property name="leaveImage">
+      <string>:/image/safe_leave.png</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="AnimationButton2" name="animationButton6">
+     <property name="normalImage">
+      <string>:/image/youhua.png</string>
+     </property>
+     <property name="enterImage">
+      <string>:/image/youhua_enter.png</string>
+     </property>
+     <property name="leaveImage">
+      <string>:/image/youhua_leave.png</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AnimationButton1</class>
+   <extends>QWidget</extends>
+   <header>animationbutton1.h</header>
+  </customwidget>
+  <customwidget>
+   <class>AnimationButton2</class>
+   <extends>QWidget</extends>
+   <header>animationbutton2.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

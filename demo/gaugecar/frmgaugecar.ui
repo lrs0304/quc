@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmGaugeCar</class>
+ <widget class="QWidget" name="frmGaugeCar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="GaugeCar" name="gaugeCar1" native="true">
+     <property name="animation" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="pieColorEnd" stdset="0">
+      <color>
+       <red>184</red>
+       <green>190</green>
+       <blue>200</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="GaugeCar" name="gaugeCar2" native="true">
+     <property name="pointerColor" stdset="0">
+      <color>
+       <red>0</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="centerCircleColor" stdset="0">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="showOverlay" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QSlider" name="horizontalSlider">
+     <property name="maximum">
+      <number>100</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GaugeCar</class>
+   <extends>QWidget</extends>
+   <header>gaugecar.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>gaugeCar1</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>134</x>
+     <y>277</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>136</x>
+     <y>221</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>gaugeCar2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>307</x>
+     <y>280</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>310</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

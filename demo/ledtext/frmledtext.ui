@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmLedText</class>
+ <widget class="QWidget" name="frmLedText">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="LedText" name="ledText1" native="true">
+     <property name="text" stdset="0">
+      <string> 123456789</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="LedText" name="ledText2" native="true">
+     <property name="text" stdset="0">
+      <string> ABCDEFGHIJKLMN</string>
+     </property>
+     <property name="foreground" stdset="0">
+      <color>
+       <red>255</red>
+       <green>107</green>
+       <blue>107</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="LedText" name="ledText3" native="true">
+     <property name="text" stdset="0">
+      <string> 飞扬青云--游龙</string>
+     </property>
+     <property name="foreground" stdset="0">
+      <color>
+       <red>24</red>
+       <green>189</green>
+       <blue>155</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>LedText</class>
+   <extends>QWidget</extends>
+   <header>ledtext.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

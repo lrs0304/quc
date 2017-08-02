@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmImagePilot</class>
+ <widget class="QWidget" name="frmImagePilot">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="ImagePilot" name="imagePilot1"/>
+   </item>
+   <item row="0" column="1">
+    <widget class="ImagePilot" name="imagePilot2">
+     <property name="pilotStyle">
+      <enum>ImagePilot::PilotStyle_Gray</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="ImagePilot" name="imagePilot3">
+     <property name="pilotStyle">
+      <enum>ImagePilot::PilotStyle_Green</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="ImagePilot" name="imagePilot4">
+     <property name="pilotStyle">
+      <enum>ImagePilot::PilotStyle_Red</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="ImagePilot" name="imagePilot5">
+     <property name="pilotStyle">
+      <enum>ImagePilot::PilotStyle_Yellow</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="ImagePilot" name="imagePilot6"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ImagePilot</class>
+   <extends>QWidget</extends>
+   <header>imagepilot.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

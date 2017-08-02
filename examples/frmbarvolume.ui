@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmBarVolume</class>
+ <widget class="QWidget" name="frmBarVolume">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="BarVolume" name="widget1"/>
+   </item>
+   <item>
+    <widget class="BarVolume" name="widget2">
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="barColorStart">
+      <color>
+       <red>255</red>
+       <green>64</green>
+       <blue>64</blue>
+      </color>
+     </property>
+     <property name="barColorMid">
+      <color>
+       <red>255</red>
+       <green>127</green>
+       <blue>36</blue>
+      </color>
+     </property>
+     <property name="barColorEnd">
+      <color>
+       <red>238</red>
+       <green>238</green>
+       <blue>0</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="BarVolume" name="widget3">
+     <property name="barColorStart">
+      <color>
+       <red>24</red>
+       <green>189</green>
+       <blue>155</blue>
+      </color>
+     </property>
+     <property name="barColorMid">
+      <color>
+       <red>140</red>
+       <green>238</green>
+       <blue>237</blue>
+      </color>
+     </property>
+     <property name="barColorEnd">
+      <color>
+       <red>238</red>
+       <green>238</green>
+       <blue>0</blue>
+      </color>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="BarVolume" name="widget4"/>
+   </item>
+   <item>
+    <widget class="BarVolume" name="widget5"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BarVolume</class>
+   <extends>QWidget</extends>
+   <header>barvolume.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmImageClock</class>
+ <widget class="QWidget" name="frmImageClock">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="ImageClock" name="imageClock1"/>
+   </item>
+   <item row="0" column="1">
+    <widget class="ImageClock" name="imageClock2">
+     <property name="clockStyle">
+      <enum>ImageClock::ClockStyle_Trad</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="ImageClock" name="imageClock3">
+     <property name="clockStyle">
+      <enum>ImageClock::ClockStyle_Modern</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="ImageClock" name="imageClock4">
+     <property name="clockStyle">
+      <enum>ImageClock::ClockStyle_Flower</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ImageClock</class>
+   <extends>QWidget</extends>
+   <header>imageclock.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

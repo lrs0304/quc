@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmSwitchButton</class>
+ <widget class="QWidget" name="frmSwitchButton">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="SwitchButton" name="widget1">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>60</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="SwitchButton" name="widget2">
+   <property name="geometry">
+    <rect>
+     <x>87</x>
+     <y>9</y>
+     <width>60</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="buttonStyle">
+    <enum>SwitchButton::ButtonStyle_Rect</enum>
+   </property>
+  </widget>
+  <widget class="SwitchButton" name="widget3">
+   <property name="geometry">
+    <rect>
+     <x>165</x>
+     <y>9</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="space">
+    <number>8</number>
+   </property>
+   <property name="buttonStyle">
+    <enum>SwitchButton::ButtonStyle_CircleOut</enum>
+   </property>
+  </widget>
+  <widget class="SwitchButton" name="widget4">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>48</y>
+     <width>60</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="bgColorOff">
+    <color>
+     <red>210</red>
+     <green>210</green>
+     <blue>210</blue>
+    </color>
+   </property>
+   <property name="bgColorOn">
+    <color>
+     <red>24</red>
+     <green>189</green>
+     <blue>155</blue>
+    </color>
+   </property>
+   <property name="sliderColorOff">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="sliderColorOn">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="SwitchButton" name="widget5">
+   <property name="geometry">
+    <rect>
+     <x>87</x>
+     <y>48</y>
+     <width>60</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="buttonStyle">
+    <enum>SwitchButton::ButtonStyle_Rect</enum>
+   </property>
+   <property name="bgColorOn">
+    <color>
+     <red>210</red>
+     <green>210</green>
+     <blue>210</blue>
+    </color>
+   </property>
+   <property name="sliderColorOff">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+   <property name="sliderColorOn">
+    <color>
+     <red>255</red>
+     <green>107</green>
+     <blue>107</blue>
+    </color>
+   </property>
+  </widget>
+  <widget class="SwitchButton" name="widget6">
+   <property name="geometry">
+    <rect>
+     <x>165</x>
+     <y>48</y>
+     <width>71</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="space">
+    <number>8</number>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="buttonStyle">
+    <enum>SwitchButton::ButtonStyle_CircleOut</enum>
+   </property>
+   <property name="bgColorOff">
+    <color>
+     <red>255</red>
+     <green>107</green>
+     <blue>107</blue>
+    </color>
+   </property>
+   <property name="bgColorOn">
+    <color>
+     <red>255</red>
+     <green>107</green>
+     <blue>107</blue>
+    </color>
+   </property>
+   <property name="sliderColorOff">
+    <color>
+     <red>240</red>
+     <green>240</green>
+     <blue>240</blue>
+    </color>
+   </property>
+   <property name="sliderColorOn">
+    <color>
+     <red>255</red>
+     <green>255</green>
+     <blue>255</blue>
+    </color>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SwitchButton</class>
+   <extends>QWidget</extends>
+   <header>switchbutton.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

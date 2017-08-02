@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/flower.png</file>
+        <file>image/flower_dot.png</file>
+        <file>image/flower_h.png</file>
+        <file>image/flower_highlights.png</file>
+        <file>image/flower_m.png</file>
+        <file>image/flower_s.png</file>
+        <file>image/modern.png</file>
+        <file>image/modern_dot.png</file>
+        <file>image/modern_h.png</file>
+        <file>image/modern_highlights.png</file>
+        <file>image/modern_m.png</file>
+        <file>image/modern_s.png</file>
+        <file>image/system.png</file>
+        <file>image/system_dot.png</file>
+        <file>image/system_h.png</file>
+        <file>image/system_highlights.png</file>
+        <file>image/system_m.png</file>
+        <file>image/system_s.png</file>
+        <file>image/trad.png</file>
+        <file>image/trad_dot.png</file>
+        <file>image/trad_h.png</file>
+        <file>image/trad_highlights.png</file>
+        <file>image/trad_m.png</file>
+        <file>image/trad_s.png</file>
+    </qresource>
+</RCC>
